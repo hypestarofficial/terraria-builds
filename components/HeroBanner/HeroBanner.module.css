@@ -1,0 +1,11 @@
+.container {
+  @apply flex top-0 absolute hover:cursor-pointer pr-4;
+}
+
+.wrapper {
+  @apply flex relative items-center w-60;
+}
+
+.logoWrapper {
+  @apply flex absolute mb-2 rotate-150 right-0 pt-3;
+}

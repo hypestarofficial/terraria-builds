@@ -1,0 +1,11 @@
+.container {
+  @apply flex flex-col sticky top-0 w-full shadow-xl;
+}
+
+.wrapper {
+  @apply flex relative flex-col items-center;
+}
+
+.navbarItemsWrapper {
+  @apply flex w-full py-8 px-40 bg-gray-700 bg-opacity-80 text-lg font-black items-center overflow-visible h-14 justify-between text-white space-x-64;
+}

@@ -1,9 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: url('../public/bg.gif');
+  background-size: cover;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
 }
 
 a {
@@ -13,4 +30,8 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --grayContainer: rgba(55, 65, 81, 0.8);
 }
