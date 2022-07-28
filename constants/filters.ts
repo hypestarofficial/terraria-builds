@@ -1,7 +1,7 @@
 export const CLASS_LIST = [
-  '/../public/classIcons/warriorIcon.png',
-  '/../public/classIcons/summonerIcon.png',
-  '/../public/classIcons/sorcererIcon.png',
-  '/../public/classIcons/rangerIcon.png',
-  '/../public/classIcons/rogueIcon.webp',
+  'https://raw.githubusercontent.com/hypestarofficial/terraria-builds-props/main/classIcons/warriorIcon.png',
+  'https://raw.githubusercontent.com/hypestarofficial/terraria-builds-props/main/classIcons/sumonerIcon.png',
+  'https://raw.githubusercontent.com/hypestarofficial/terraria-builds-props/main/classIcons/sorcererIcon.png',
+  'https://raw.githubusercontent.com/hypestarofficial/terraria-builds-props/main/classIcons/rangerIcon.png',
+  'https://raw.githubusercontent.com/hypestarofficial/terraria-builds-props/main/classIcons/rogueIcon.webp',
 ];

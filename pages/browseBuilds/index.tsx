@@ -1,12 +1,12 @@
 import React from 'react';
 import { NextPage } from 'next';
-import Image from 'next/image';
 
-import reaverArmor from '../../public/armors/reaverArmor.svg';
 import { Navbar } from '../../components/Navbar/Navbar';
 import { CardCheckbox } from '../../components/CardCheckbox/CardCheckbox';
 import { CLASS_LIST } from '../../constants/filters';
-import { Avatar, Card } from '@nextui-org/react';
+import { BuildCard } from '../../components/BuildCard/BuildCrad';
+import { classesConfig } from '../../constants/classes';
+import { armors } from '../../constants/armors';
 
 const browseBuilds: NextPage = () => {
   return (
@@ -18,23 +18,12 @@ const browseBuilds: NextPage = () => {
             <CardCheckbox icon={value} key={index} id={value} />
           ))}
         </div>
-        <div className='flex'>
-          <Card
-            css={{
-              bgColor: 'var(--grayContainer)',
-              border: 'none',
-            }}
-            isPressable
-          >
-            <Card.Body>
-              <div className='flex px-2'>
-                <div className='flex border-2 border-green-400 p-4 items-center rounded-xl shadow-lg'>
-                  <Image src={reaverArmor} alt='armor icon' height='120px' />
-                </div>
-              </div>
-            </Card.Body>
-          </Card>
-        </div>
+        <BuildCard
+          armor={armors.reaverArmor}
+          name='Reaver melee tank build'
+          emblem={classesConfig.Warrior}
+          borderColor='border-preCalamitas'
+        />
       </div>
     </div>
   );
