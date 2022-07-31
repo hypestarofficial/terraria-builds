@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { NextPage } from 'next';
 
 import { Navbar } from '../../components/Navbar/Navbar';
 import { CardCheckbox } from '../../components/CardCheckbox/CardCheckbox';
-import { CLASS_LIST } from '../../constants/filters';
 import { BuildCard } from '../../components/BuildCard/BuildCard';
 import Head from 'next/head';
 import { builds } from '../../builds/builds';
-import build from 'next/dist/build';
 import { classesConfig } from '../../constants/classes';
 
 export async function getStaticProps() {
