@@ -7,6 +7,7 @@ import { WeaponBox } from '../WeaponBox/WeaponBox';
 import { ArmorBox } from '../ArmorBox/ArmorBox';
 import { Build } from '../../constants/terrariaBuilds';
 import { ClassBadge } from '../ClassBadge/ClassBadge';
+import { Badge } from '../Badge/Badge';
 
 type BuildCardProps = {
   build: Build;
@@ -27,10 +28,13 @@ export const BuildCard = ({ build }: BuildCardProps) => {
             <div className={cn('flex px-2 space-x-6 text-white')}>
               <ArmorBox armor={build.armor} borderColor={build.borderColor} />
               <div className='flex flex-col justify-between space-y-2'>
-                <div className='flex space-x-2 items-center'>
-                  <ClassBadge classProp={build.class} />
-                  <div className='flex'>
+                <div className='flex flex-col space-y-1 mb-4'>
+                  <div className='flex items-center justify-start space-x-2'>
+                    <ClassBadge classProp={build.class} />
                     <h1>{build.name}</h1>
+                  </div>
+                  <div className='flex items-center'>
+                    <Badge badge='Calamity' />
                   </div>
                 </div>
                 {build.weapons && (

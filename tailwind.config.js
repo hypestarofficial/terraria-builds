@@ -8,6 +8,9 @@ module.exports = {
       rotate: {
         150: '150deg',
       },
+      height: {
+        50: '12.5rem',
+      },
       colors: {
         preBosses: '#ffffff',
         preEater: '#5a00ff',

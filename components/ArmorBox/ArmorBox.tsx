@@ -15,7 +15,7 @@ export const ArmorBox = ({ armor, borderColor }: ArmorBoxProps) => {
       <Tooltip content={armor.name} shadow>
         <div
           className={cn(
-            'flex border-2 p-4 rounded-xl shadow-xl h-44',
+            'flex border-2 p-4 rounded-xl shadow-xl h-50',
             borderColor ? borderColor : 'border-white'
           )}
         >

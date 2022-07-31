@@ -1,0 +1,3 @@
+.container {
+  @apply flex bg-opacity-50 rounded-xl text-xs px-2 mx-1 shadow-md;
+}

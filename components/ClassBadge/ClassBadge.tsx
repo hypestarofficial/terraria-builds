@@ -10,7 +10,7 @@ type ClassBadgeProps = {
 
 export const ClassBadge = ({ classProp }: ClassBadgeProps) => {
   return (
-    <div key={classProp.id}>
+    <div key={classProp.id} className='flex'>
       <Tooltip content={classProp.name} shadow>
         <Image
           priority={true}

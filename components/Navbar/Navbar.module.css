@@ -1,5 +1,5 @@
 .container {
-  @apply flex flex-col sticky top-0 w-full shadow-xl;
+  @apply flex flex-col sticky top-0 w-full shadow-xl z-10;
 }
 
 .wrapper {

@@ -32,8 +32,8 @@ export default function Home() {
             </p>
             <p>
               Concept of the project is to create a unified place for fellow
-              terraria players to browse and build different builds depending on
-              your world's progression.
+              terraria players to browse and build different loudouts depending
+              on your world's progression.
             </p>
           </div>
         </div>
