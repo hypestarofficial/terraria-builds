@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -16,7 +15,7 @@ module.exports = {
         preSkeletron: '#bfbfbf',
         preWall: '#9d0000',
         preMechanical: '#dddddd',
-        prePlantera: '#00a000',
+        prePlanteraa: '#00a000',
         preGolem: '#d16900',
         preCultist: '#4343ff',
         preMoonLord: '#00b7a5',

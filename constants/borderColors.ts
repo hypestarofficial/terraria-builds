@@ -1,0 +1,18 @@
+export const borderColors = [
+  'border-preBosses',
+  'border-preEater',
+  'border-preBrain',
+  'border-preSkeletron',
+  'border-preWall',
+  'border-preMechanical',
+  'border-prePlantera',
+  'border-preGolem',
+  'border-preCultist',
+  'border-preMoonLord',
+  'border-preProvidence',
+  'border-prePolterghast',
+  'border-preDevourer',
+  'border-preYahron',
+  'border-preCalamitas',
+  'border-endGame',
+];

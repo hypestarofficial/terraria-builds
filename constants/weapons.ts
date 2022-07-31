@@ -1,13 +1,9 @@
-export type Weapon = {
-  id: string;
-  src: string;
-};
-
-export type Weapons<R extends string = string> = Record<R, Weapon>;
+import { Weapons } from './terrariaBuilds';
 
 export const weapons: Weapons<'Galaxia'> = {
   Galaxia: {
-    id: 'Galaxia',
+    id: 1,
+    name: 'Galaxia',
     src: 'https://raw.githubusercontent.com/hypestarofficial/terraria-builds-props/main/weapons/galaxia.webp',
   },
 };

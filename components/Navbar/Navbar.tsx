@@ -12,10 +12,10 @@ export const Navbar = () => {
       <div className={styles.wrapper}>
         <div className={styles.navbarItemsWrapper}>
           <div className='flex space-x-6 justify-end w-full pr-2'>
-            <Link href='/'>BUILD YOUR LOUDOUT</Link>
             <Link href={generalRoutesConfig.browseBuilds.href}>
               BROWSE BUILDS
             </Link>
+            <Link href='/'>BUILD YOUR LOUDOUT</Link>
           </div>
           <div className='flex w-full space-x-6'>
             <Link href='/'>ABOUT GAME</Link>
