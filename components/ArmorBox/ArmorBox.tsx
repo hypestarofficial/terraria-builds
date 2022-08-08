@@ -22,7 +22,7 @@ export const ArmorBox = ({ armor, borderColor }: ArmorBoxProps) => {
           <Image
             priority={true}
             src={armor.src}
-            alt={`${armor.id}`}
+            alt={`${armor.name}`}
             height='120px'
             width='100px'
           />

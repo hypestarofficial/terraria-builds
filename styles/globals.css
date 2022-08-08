@@ -15,6 +15,18 @@ body {
   color: white;
 }
 
+.grayContainer {
+  @apply shadow-xl;
+
+  background-color: var(--grayContainer);
+  border-radius: 12px;
+
+}
+
+.wordBreak {
+  word-break: break-word;
+}
+
 h1 {
   font-size: 24px;
   font-weight: 600;

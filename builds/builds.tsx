@@ -15,6 +15,7 @@ export const builds = [
       accessories.warbannerOfTheSun,
       accessories.warbannerOfTheSun,
     ],
+    badge: 'Calamity',
     borderColor: 'border-preCalamitas',
   },
   {
@@ -24,6 +25,7 @@ export const builds = [
     class: classesConfig[1],
     weapons: [weapons.Galaxia, weapons.Galaxia, weapons.Galaxia],
     accessories: [accessories.warbannerOfTheSun],
+    badge: 'Vanilla',
     borderColor: 'border-preCalamitas',
   },
   {
@@ -37,6 +39,7 @@ export const builds = [
       accessories.warbannerOfTheSun,
       accessories.warbannerOfTheSun,
     ],
+    badge: 'Calamity',
     borderColor: 'border-preCalamitas',
   },
   {
@@ -50,6 +53,7 @@ export const builds = [
       accessories.warbannerOfTheSun,
       accessories.warbannerOfTheSun,
     ],
+    badge: 'Calamity',
     borderColor: 'border-preCalamitas',
   },
   {
@@ -63,6 +67,7 @@ export const builds = [
       accessories.warbannerOfTheSun,
       accessories.warbannerOfTheSun,
     ],
+    badge: 'Vanilla',
     borderColor: 'border-preCalamitas',
   },
   {
@@ -76,6 +81,7 @@ export const builds = [
       accessories.warbannerOfTheSun,
       accessories.warbannerOfTheSun,
     ],
+    badge: 'Vanilla',
     borderColor: 'border-preCalamitas',
   },
 ];

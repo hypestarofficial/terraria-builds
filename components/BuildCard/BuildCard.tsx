@@ -8,12 +8,16 @@ import { ArmorBox } from '../ArmorBox/ArmorBox';
 import { Build } from '../../constants/terrariaBuilds';
 import { ClassBadge } from '../ClassBadge/ClassBadge';
 import { Badge } from '../Badge/Badge';
+import { useRouter } from 'next/router';
 
 type BuildCardProps = {
   build: Build;
 };
 
 export const BuildCard = ({ build }: BuildCardProps) => {
+
+  const router = useRouter();
+
   return (
     <div className='flex'>
       {build && (
@@ -23,6 +27,7 @@ export const BuildCard = ({ build }: BuildCardProps) => {
             border: 'none',
           }}
           isPressable
+          onClick={() => router.push('/browseBuilds/1')}
         >
           <Card.Body>
             <div className={cn('flex px-2 space-x-6 text-white')}>
@@ -34,7 +39,7 @@ export const BuildCard = ({ build }: BuildCardProps) => {
                     <h1>{build.name}</h1>
                   </div>
                   <div className='flex items-center'>
-                    <Badge badge='Calamity' />
+                    <Badge badge={build.badge} />
                   </div>
                 </div>
                 {build.weapons && (

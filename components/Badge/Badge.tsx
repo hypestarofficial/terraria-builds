@@ -3,7 +3,7 @@ import cn from 'classnames';
 import styles from './Badge.module.css';
 
 type BadgeProps = {
-  badge: 'Vanilla' | 'Calamity';
+  badge: string;
 };
 
 export const Badge = ({ badge }: BadgeProps) => {

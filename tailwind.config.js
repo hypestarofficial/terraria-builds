@@ -10,6 +10,12 @@ module.exports = {
       },
       height: {
         50: '12.5rem',
+        25: '6.25rem',
+      },
+      width: {
+        15.5: '3.875rem',
+        50: '12.5rem',
+        25: '6.25rem'
       },
       colors: {
         preBosses: '#ffffff',

@@ -35,5 +35,6 @@ export type Build = {
   armor: Armor;
   weapons: Weapon[];
   accessories: Accessory[];
+  badge: string;
   borderColor: string;
 };

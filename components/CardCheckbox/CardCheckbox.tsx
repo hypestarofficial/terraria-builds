@@ -18,7 +18,7 @@ export const CardCheckbox = ({
   onChange,
 }: CardCheckboxProps) => {
   return (
-    <div className='flex p-3 bg-gray-700 bg-opacity-80 shadow-xl rounded-xl'>
+    <div className='flex p-3 bg-gray-700 bg-opacity-80 shadow-xl rounded-xl z-0'>
       {title && <h1>{title}</h1>}
       <Checkbox color='gradient' value={option} onChange={onChange}>
         {option && <span className='mr-2'>{option}</span>}
