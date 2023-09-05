@@ -8,7 +8,7 @@ export type RouteConfig = {
 export type RoutesConfig<R extends string = string> = Record<R, RouteConfig>;
 
 export const generalRoutesConfig: RoutesConfig<
-  'buildYourLoudout' | 'browseBuilds'
+  'buildYourLoudout' | 'browseBuilds' | 'buildPage'
 > = {
   buildYourLoudout: {
     id: 'buildYourLoudout',
@@ -19,5 +19,10 @@ export const generalRoutesConfig: RoutesConfig<
     id: 'browseBuilds',
     name: 'Browse builds',
     href: '/browseBuilds',
+  },
+  buildPage: {
+    id: 'buildPage',
+    name: 'Build',
+    href: '/browseBuilds/[buildId]',
   },
 };

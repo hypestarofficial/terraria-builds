@@ -9,13 +9,13 @@ import { Build } from '../../constants/terrariaBuilds';
 import { ClassBadge } from '../ClassBadge/ClassBadge';
 import { Badge } from '../Badge/Badge';
 import { useRouter } from 'next/router';
+import { generalRoutesConfig } from '../../constants/routes';
 
 type BuildCardProps = {
   build: Build;
 };
 
 export const BuildCard = ({ build }: BuildCardProps) => {
-
   const router = useRouter();
 
   return (
@@ -27,7 +27,12 @@ export const BuildCard = ({ build }: BuildCardProps) => {
             border: 'none',
           }}
           isPressable
-          onClick={() => router.push('/browseBuilds/1')}
+          onClick={() =>
+            router.push({
+              pathname: generalRoutesConfig.buildPage.href,
+              query: { buildId: build.id },
+            })
+          }
         >
           <Card.Body>
             <div className={cn('flex px-2 space-x-6 text-white')}>
@@ -35,7 +40,7 @@ export const BuildCard = ({ build }: BuildCardProps) => {
               <div className='flex flex-col justify-between space-y-2'>
                 <div className='flex flex-col space-y-1 mb-4'>
                   <div className='flex items-center justify-start space-x-2'>
-                    <ClassBadge classProp={build.class} />
+                    <ClassBadge classProp={build.classType} />
                     <h1>{build.name}</h1>
                   </div>
                   <div className='flex items-center'>

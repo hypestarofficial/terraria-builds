@@ -31,8 +31,6 @@ const browseBuilds: NextPage = () => {
     }
   };
 
-  console.log(selectedClasses);
-
   return (
     <div className='flex flex-col h-screen overflow-y-auto'>
       <Head>
@@ -55,7 +53,7 @@ const browseBuilds: NextPage = () => {
           builds
             .filter((build) =>
               selectedClasses.length !== 0
-                ? selectedClasses.includes(build.class.name)
+                ? selectedClasses.includes(build.classType.name)
                 : true
             )
             .map((build, index) => <BuildCard build={build} key={index} />)}

@@ -31,7 +31,7 @@ export type Builds<R extends string = string> = Record<R, Build>;
 export type Build = {
   id: number;
   name: string;
-  class: Class;
+  classType: Class;
   armor: Armor;
   weapons: Weapon[];
   accessories: Accessory[];

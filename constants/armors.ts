@@ -1,4 +1,4 @@
-import { Armors } from './terrariaBuilds';
+import type { Armors } from './terrariaBuilds';
 
 export const armors: Armors<'reaverArmor'> = {
   reaverArmor: {
