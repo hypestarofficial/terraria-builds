@@ -19,7 +19,7 @@ export const ArmorBox = ({ armor, borderColor }: ArmorBoxProps) => {
             borderColor ? borderColor : 'border-white'
           )}
         >
-          <div>Serusssss</div>
+          <div>Serussss</div>
           <Image
             priority={true}
             src={armor.src}
